@@ -1,20 +1,17 @@
-type Name = string | number
-
-let 이름 : Name ='kim';
-
-function 함수(x:number) :number {
-    return x*2;
-} 
-
-type Member = {
-    [key :string] : string,
-}
-let john : Member = {name:'kim'};
-
-
-class User{
-    name:string;
-    constructor(name:string){
-        this.name = name;
+ //narrowing
+function 내함수(x:number|string){
+    let array : number[] = [];
+    if(typeof x ==='number'){
+        array[0] = x;
     }
 }
+내함수(123)
+
+
+//assertion
+function 내함수2(x:number|string){
+    let array : number[] =[];
+    array[0] = x as number ;
+}
+내함수2(3)
+
