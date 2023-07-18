@@ -1,17 +1,7 @@
- //narrowing
-function 내함수(x:number|string){
-    let array : number[] = [];
-    if(typeof x ==='number'){
-        array[0] = x;
-    }
-}
-내함수(123)
+// import {이름, 나이} from './a';
 
 
-//assertion
-function 내함수2(x:number|string){
-    let array : number[] =[];
-    array[0] = x as number ;
-}
-내함수2(3)
+// let 변수:Name = 'park';
 
+// console.log(이름);
+// console.log(나이)
